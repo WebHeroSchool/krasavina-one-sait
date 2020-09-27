@@ -1,3 +1,38 @@
 .title {
   font-family: Roboto;
 }
+
+body {
+  margin: 0;
+  border: dashed 1px red;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: dashed 1px red;
+}
+
+.logo {
+  padding: 40px 0;
+  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 13px;
+  border: dashed 1px red;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
