@@ -398,3 +398,34 @@ menu__item::after {
     display: none;
   }
 }
+
+/*Создание анимации*/
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+    opacity: 25%;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 100%;
+  }
+}
+
+/*Добавление анимации к элементу*/
+
+.element {
+  display: block;
+  height: 200px;
+  width: 200px;
+  opacity: 30%;
+  background-color: orange;
+  animation-name: move;
+  animation-duration: 1.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
