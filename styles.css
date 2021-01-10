@@ -7,20 +7,25 @@ body {
 }
 
 .wrapper {
-  width: 80%;
+  /*width: 80%;*/
   margin: auto;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
 }
 
 @media (min-width: 1920px) {
   .main__title {
     margin: 0 0 40px 0;
-    font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
+      font-family: pt_serif;
+font-size: 66px;
+font-style: normal;
+font-weight: 700;
+line-height: 87px;
+}
   }
 
   .main__subtitle {
@@ -42,6 +47,15 @@ body {
     color: #000;
     text-decoration: none;
     transition: opacity 0.5s;
+  }
+
+  .header {
+    margin-bottom: 160px;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: auto;
   }
 }
 
